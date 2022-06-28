@@ -12,42 +12,46 @@ struct EmojiMemoryGameView: View {
     @ObservedObject var viewModel: EmojiMemoryGame
     
     var body: some View {
+        VStack{
         Grid (viewModel.cards) { card in
                 CardView(card: card).onTapGesture {
-                    viewModel.choose(card: card)
+                    withAnimation(.linear(duration: 2)){
+                        viewModel.choose(card: card)                       
+                    }
                 }
             .padding(5)
             }
                 .padding()
                 .foregroundColor(Color.blue)
+            Button(action: {
+                withAnimation(.easeInOut(duration: 2)){
+                    self.viewModel.resetGame()
+                }
+            }, lable: {Text("New Game")})
+        }
     }
 }
 
 struct CardView: View{
     var card: MemoryGame<String>.Card
     
+    @viewBuilder
     var body: some View{
         GeometryReader(content: { geometry in
-            ZStack{
-                if card.isFaceUp{
-                    RoundedRectangle(cornerRadius: cornerRadius).fill(Color.white)
-                    RoundedRectangle(cornerRadius: cornerRadius).strokeBorder(lineWidth: edgeLineWidth)
+            if card.isFaceUp || !card.isMatched{
+                ZStack{
                     Pie(startAngle: Angle.degrees(0-90), endAngle: Angle.degrees(110-90),clockwise: true)
                         .padding(5).opacity(0.5)
                     Text(card.content)
-                }else{
-                    if !card.isMatched{
-                        RoundedRectangle(cornerRadius: cornerRadius).fill()
-                    }
+                        .font(Font.system(size: min(geometry.size.width, geometry.size.height) * fontScaleFactor))
+                        .rotationEffect(Angle.degrees(card.isMatched ? 360 : 0))
+                        .animation(card.isMatched ? Animation.linear(duration: 1) : .default)
                 }
-            }
-            .font(Font.system(size: min(geometry.size.width, geometry.size.height) * fontScaleFactor))
+                .cardify(isFaceUp: card.isFaceUp
+                .transition(AnyTransition.scale)
+            }           
         })
     }
-    //MARK: -Drawing Constants
-    
-    private let cornerRadius: CGFloat = 10.0
-    private let edgeLineWidth: CGFloat = 3
     private let fontScaleFactor: CGFloat = 0.70
 }
 
