@@ -9,7 +9,7 @@ struct Cardify: viewModifer, Animatable{
     }
     
 
-    var isFaceUp：Bool{
+    var isFaceUp: Bool{
         rotation < 90
     }
 
@@ -28,10 +28,9 @@ struct Cardify: viewModifer, Animatable{
                 .opacity(isFaceUp ? 1 : 0)
             RoundedRectangle(cornerRadius: cornerRadius).fill()
                 .opacity(isFaceUp ? 0 : 1)
-            }
         }
-        .roation3DEffect(angle:degrees(card.isFaceUp ? 0 : 180), axis:(0,1,0))               
     }
+    .roation3DEffect(angle:degrees(card.isFaceUp ? 0 : 180), axis:(0,1,0))
 
     //MARK: -Drawing Constants
 
