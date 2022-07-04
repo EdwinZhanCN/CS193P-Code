@@ -48,7 +48,7 @@ struct  MemoryGame<CardContent> where CardContent: Equatable{
     
     struct Card: Identifiable {
         var isFaceUp: Bool = false{
-            didset{
+            didSet{
                 if isFaceUp{
                     startUsingBonusTime()
                 }else{
@@ -57,7 +57,7 @@ struct  MemoryGame<CardContent> where CardContent: Equatable{
             }
         }
         var isMatched: Bool = false{
-            didset{
+            didSet{
                 stopUsingBonusTime()
             }
         }

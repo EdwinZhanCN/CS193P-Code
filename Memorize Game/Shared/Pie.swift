@@ -14,7 +14,7 @@ struct Pie:Shape {
 
     var animatableData: AnimatablePair<Double, Double> {
         get{
-            AnimatablePair(startAngle.radius, endAngle.radius)
+            AnimatablePair(startAngle.radians, endAngle.radians)
         }
 
         set{

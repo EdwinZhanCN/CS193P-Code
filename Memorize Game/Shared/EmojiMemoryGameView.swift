@@ -35,16 +35,16 @@ struct EmojiMemoryGameView: View {
 struct CardView: View{
     var card: MemoryGame<String>.Card
 
-    @state private var animateBonusRemaning: Double = 0
+    @State private var animateBonusRemaning: Double = 0
 
-    private func startBonusTimeAnimation{
+    private func startBonusTimeAnimation(){
         animateBonusRemaning = card.bonusRemaining
         withAnimation(.linear(duration: card.bonusTimeRemaining)){
             animateBonusRemaning = 0
         }
     }
     
-    @viewBuilder
+    @ViewBuilder
     var body: some View{
         GeometryReader(content: { geometry in
             if card.isFaceUp || !card.isMatched{
@@ -59,7 +59,7 @@ struct CardView: View{
                             Pie(startAngle: Angle.degrees(0-90), endAngle: Angle.degrees(-animateBonusRemaning*360-90),clockwise: true)
                         }
                     }
-                    .padding(5).opacity(0.5)
+                    
                     Text(card.content)
                         .font(Font.system(size: min(geometry.size.width, geometry.size.height) * fontScaleFactor))
                         .rotationEffect(Angle.degrees(card.isMatched ? 360 : 0))
@@ -67,6 +67,7 @@ struct CardView: View{
                 }
                 .cardify(isFaceUp: card.isFaceUp)
                 .transition(AnyTransition.scale)
+                .padding(5).opacity(0.5)
             }           
         })
     }

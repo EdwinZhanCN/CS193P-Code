@@ -7,10 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1B652E322869DC4C0097A871 /* Tests_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B652E312869DC4C0097A871 /* Tests_iOS.swift */; };
-		1B652E342869DC4C0097A871 /* Tests_iOSLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B652E332869DC4C0097A871 /* Tests_iOSLaunchTests.swift */; };
-		1B652E3E2869DC4C0097A871 /* Tests_macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B652E3D2869DC4C0097A871 /* Tests_macOS.swift */; };
-		1B652E402869DC4C0097A871 /* Tests_macOSLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B652E3F2869DC4C0097A871 /* Tests_macOSLaunchTests.swift */; };
 		1B652E452869DC4C0097A871 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1B652E1B2869DC4C0097A871 /* Assets.xcassets */; };
 		1B652E462869DC4C0097A871 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1B652E1B2869DC4C0097A871 /* Assets.xcassets */; };
 		1B652E562869DC8C0097A871 /* Array + Identifiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B652E552869DC8C0097A871 /* Array + Identifiable.swift */; };
@@ -31,6 +27,8 @@
 		1B652E6C2869DD2A0097A871 /* EmojiMemoryGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B652E6A2869DD2A0097A871 /* EmojiMemoryGame.swift */; };
 		1B652E6E2869E3800097A871 /* Pie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B652E6D2869E3800097A871 /* Pie.swift */; };
 		1B652E6F2869E3800097A871 /* Pie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B652E6D2869E3800097A871 /* Pie.swift */; };
+		3189E5812870666F0012D9F7 /* Cardify.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3189E5802870666F0012D9F7 /* Cardify.swift */; };
+		3189E5822870666F0012D9F7 /* Cardify.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3189E5802870666F0012D9F7 /* Cardify.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,13 +52,8 @@
 		1B652E1B2869DC4C0097A871 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1B652E202869DC4C0097A871 /* Memorize Game.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Memorize Game.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1B652E262869DC4C0097A871 /* Memorize Game.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Memorize Game.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		1B652E282869DC4C0097A871 /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
 		1B652E2D2869DC4C0097A871 /* Tests iOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests iOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		1B652E312869DC4C0097A871 /* Tests_iOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_iOS.swift; sourceTree = "<group>"; };
-		1B652E332869DC4C0097A871 /* Tests_iOSLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_iOSLaunchTests.swift; sourceTree = "<group>"; };
 		1B652E392869DC4C0097A871 /* Tests macOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests macOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		1B652E3D2869DC4C0097A871 /* Tests_macOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOS.swift; sourceTree = "<group>"; };
-		1B652E3F2869DC4C0097A871 /* Tests_macOSLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOSLaunchTests.swift; sourceTree = "<group>"; };
 		1B652E552869DC8C0097A871 /* Array + Identifiable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Array + Identifiable.swift"; sourceTree = "<group>"; };
 		1B652E582869DCA10097A871 /* Array + Only.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Array + Only.swift"; sourceTree = "<group>"; };
 		1B652E5B2869DCA70097A871 /* EmojiMemoryGameView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmojiMemoryGameView.swift; sourceTree = "<group>"; };
@@ -70,6 +63,7 @@
 		1B652E672869DCBF0097A871 /* MemoryGame.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MemoryGame.swift; sourceTree = "<group>"; };
 		1B652E6A2869DD2A0097A871 /* EmojiMemoryGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiMemoryGame.swift; sourceTree = "<group>"; };
 		1B652E6D2869E3800097A871 /* Pie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pie.swift; sourceTree = "<group>"; };
+		3189E5802870666F0012D9F7 /* Cardify.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cardify.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,9 +102,6 @@
 			isa = PBXGroup;
 			children = (
 				1B652E182869DC4A0097A871 /* Shared */,
-				1B652E272869DC4C0097A871 /* macOS */,
-				1B652E302869DC4C0097A871 /* Tests iOS */,
-				1B652E3C2869DC4C0097A871 /* Tests macOS */,
 				1B652E212869DC4C0097A871 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -125,6 +116,7 @@
 				1B652E5B2869DCA70097A871 /* EmojiMemoryGameView.swift */,
 				1B652E6D2869E3800097A871 /* Pie.swift */,
 				1B652E5E2869DCAE0097A871 /* Grid.swift */,
+				3189E5802870666F0012D9F7 /* Cardify.swift */,
 				1B652E672869DCBF0097A871 /* MemoryGame.swift */,
 				1B652E6A2869DD2A0097A871 /* EmojiMemoryGame.swift */,
 				1B652E552869DC8C0097A871 /* Array + Identifiable.swift */,
@@ -141,32 +133,6 @@
 				1B652E392869DC4C0097A871 /* Tests macOS.xctest */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		1B652E272869DC4C0097A871 /* macOS */ = {
-			isa = PBXGroup;
-			children = (
-				1B652E282869DC4C0097A871 /* macOS.entitlements */,
-			);
-			path = macOS;
-			sourceTree = "<group>";
-		};
-		1B652E302869DC4C0097A871 /* Tests iOS */ = {
-			isa = PBXGroup;
-			children = (
-				1B652E312869DC4C0097A871 /* Tests_iOS.swift */,
-				1B652E332869DC4C0097A871 /* Tests_iOSLaunchTests.swift */,
-			);
-			path = "Tests iOS";
-			sourceTree = "<group>";
-		};
-		1B652E3C2869DC4C0097A871 /* Tests macOS */ = {
-			isa = PBXGroup;
-			children = (
-				1B652E3D2869DC4C0097A871 /* Tests_macOS.swift */,
-				1B652E3F2869DC4C0097A871 /* Tests_macOSLaunchTests.swift */,
-			);
-			path = "Tests macOS";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -335,6 +301,7 @@
 				1B652E5F2869DCAE0097A871 /* Grid.swift in Sources */,
 				1B652E682869DCBF0097A871 /* MemoryGame.swift in Sources */,
 				1B652E562869DC8C0097A871 /* Array + Identifiable.swift in Sources */,
+				3189E5812870666F0012D9F7 /* Cardify.swift in Sources */,
 				1B652E6B2869DD2A0097A871 /* EmojiMemoryGame.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -351,6 +318,7 @@
 				1B652E602869DCAE0097A871 /* Grid.swift in Sources */,
 				1B652E692869DCBF0097A871 /* MemoryGame.swift in Sources */,
 				1B652E572869DC8C0097A871 /* Array + Identifiable.swift in Sources */,
+				3189E5822870666F0012D9F7 /* Cardify.swift in Sources */,
 				1B652E6C2869DD2A0097A871 /* EmojiMemoryGame.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -359,8 +327,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1B652E342869DC4C0097A871 /* Tests_iOSLaunchTests.swift in Sources */,
-				1B652E322869DC4C0097A871 /* Tests_iOS.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -368,8 +334,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1B652E402869DC4C0097A871 /* Tests_macOSLaunchTests.swift in Sources */,
-				1B652E3E2869DC4C0097A871 /* Tests_macOS.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -523,7 +487,7 @@
 				SDKROOT = iphoneos;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -552,7 +516,7 @@
 				SDKROOT = iphoneos;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
