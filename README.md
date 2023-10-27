@@ -4,6 +4,6 @@
 
 https://cs193p.sites.stanford.edu
 
-The code is copied step by step in 2021, there must be some functions in the project were deprecated.
+The code was copied step by step in 2021, there must be some functions in the project were deprecated.
 
 This project is only for study use.
